@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, height = device-height, initial-scale = 1.0, user-scalable = yes">
+	<title>alert-js demo</title>
+  <script src="node_modules/ripple-js/ripple.min.js"></script>
+  <script src="../alert.min.js"></script>
+ <style>
+  body {
+    background: #F9F9F9;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: royalBlue;
+  }
+  .btn {
+    display: inline-block;
+    background: lightBlue;
+    outline: 1px blue;
+    padding: 5px;
+    font-size: 125%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .txt {
+    font-size: 110%;
+    margin: 3px;
+  }
+  .space {
+    height: 100px;
+  }
+ </style>
+ <script>
+  window.addEventListener("load", function() {
+    alert.show("Welcome to the alert-js demo!<br>Let me walk you through the key-features of this mini library");
+    alert.show("Alerts are animated and the action buttons have a ripple effect");
+    alert.show("You can set custom actions", ["Got it", "Alright"]);
+    alert.show("The looks are easily changeable", [], {accentColor: "green", rippleOpacity: 0.9});
+
+    document.getElementById("actions").addEventListener("click", function() {
+      alert.show("Please choose what you would like to do:", ["eat", "sleep", "cuddle with cats"]).then(function(v) {
+        document.getElementById("value").innerHTML = "You chose " + v + "!";
+      })
+    });
+    document.getElementById("advanced").addEventListener("click", function() {
+      alert.show("HTML elements in an alert? No problem!<br><img src='awesome.jpg'>", ["meow"]);
+    })
+  });
+</script>
+</head>
+<body align="center">
+<h1>ripple-js demo</h1>
+<div class="txt">You can easily find out what action was being clicked:</div>
+<div class="btn" id="actions">Click to choose an action</div>
+<div id="value" class="txt"></div>
+<div class="space"></div>
+<div class="btn" id="advanced">It is also possible to show HTML structures</div>
+</body>
+</html>
