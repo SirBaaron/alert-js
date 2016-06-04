@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/SirBaaron/alert-js/issues"
   },
-  "homepage": "https://github.com/SirBaaron/alert-js#readme"
+  "homepage": "https://github.com/SirBaaron/alert-js#readme",
+  "dependencies": {
+  	"ripple-js": ">=1.4.0"
+  }
 }
