@@ -23,7 +23,7 @@
 
         el = document.createElement("div");
         el.id = "alertBox";
-        el.innerHTML = "<div class='body' align='center'></div><div class='actionFooter'></div>";
+        el.innerHTML = "<div class='body' align='center'></div><div class='actionfooter'></div>";
         el.style.display = "none";
         document.body.appendChild(el);
 
