@@ -12,7 +12,7 @@ Alert-js is an easy way to integrate userfriendly, smoothly animated, in materia
 <br><br><br>
 
 ### Setup
-**With npm:**<p>1. At the root of your index, type `npm install ripple-js` into the command line.<br>2. Add the tag `<script src="node_modules/alert-js/alert.min.js"></script>` to your index file. If you want to show alerts on finished load, also add the script tag `<script src="node_modules/ripple-js/ripple.min.js"></script>` BEFORE!
+**With npm:**<p>1. At the root of your index, type `npm install alert-js` into the command line.<br>2. Add the tag `<script src="node_modules/alert-js/alert.min.js"></script>` to your index file. If you want to show alerts on finished load, also add the script tag `<script src="node_modules/ripple-js/ripple.min.js"></script>` BEFORE!
 
 <br><br><br>
 ### Properties
